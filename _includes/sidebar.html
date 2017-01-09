@@ -1,44 +1,41 @@
-<!-- Use icons from fontawesome when you are adding new item in the contact list  -->
+<div class="sidebar-wrapper">
+      <div class="profile-container">
+          {% if site.pic %}<img class="profile-img" src="{{site.baseurl}}/assets/images/{{ site.pic }}" alt="profile picture" />{% endif %}
+          {% if site.name %}<h1 class="name">{{site.name}}</h1>{% endif %}
+          {% if site.tagline %}<h3 class="tagline">{{site.tagline}}</h3>{% endif %}
+      </div><!--//profile-container-->
 
+      <div class="contact-container container-block">
+          <ul class="list-unstyled contact-list">
 
-     <div class="sidebar-wrapper">
-            <div class="profile-container">
-                {% if site.pic %}<img class="profile-img" src="{{site.baseurl}}/assets/images/{{ site.pic }}" alt="profile picture" />{% endif %}
-                {% if site.name %}<h1 class="name">{{site.name}}</h1>{% endif %}
-                {% if site.tagline %}<h3 class="tagline">{{site.tagline}}</h3>{% endif %}
-            </div><!--//profile-container-->
+              {% if site.bday %}
+              <li class="bday"><i class="fa fa-birthday-cake"></i>{{site.bday}}</li>
+              {% endif %}
 
-            <div class="contact-container container-block">
-                <ul class="list-unstyled contact-list">
+              {% if site.email %}
+              <li class="email"><i class="fa fa-envelope"></i><a href="mailto: {{site.email}}">{{site.email}}</a></li>
+              {% endif %}
 
-                    {% if site.bday %}
-                    <li class="bday"><i class="fa fa-birthday-cake"></i>{{site.bday}}</li>
-                    {% endif %}
+              {% if site.phone %}
+              <li class="phone"><i class="fa fa-phone"></i><a href="tel:{{site.phone}}">{{site.phone}}</a></li>
+              {% endif %}
 
-                    {% if site.email %}
-                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto: {{site.email}}">{{site.email}}</a></li>
-                    {% endif %}
+              {% if site.website %}
+              <li class="website"><i class="fa fa-globe"></i><a href="http://{{site.website}}" target="_blank">{{site.website}}</a></li>
+              {% endif %}
 
-                    {% if site.phone %}
-                    <li class="phone"><i class="fa fa-phone"></i><a href="tel:{{site.phone}}">{{site.phone}}</a></li>
-                    {% endif %}
+              {% if site.linkedin %}
+              <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/{{site.linkedin}}" target="_blank">linkedin.com/in/{{site.linkedin}}</a></li>
+              {% endif %}
 
-                    {% if site.website %}
-                    <li class="website"><i class="fa fa-globe"></i><a href="http://{{site.website}}" target="_blank">{{site.website}}</a></li>
-                    {% endif %}
+              {% if site.github %}
+              <li class="github"><i class="fa fa-github"></i><a href="http://github.com/{{site.github}}" target="_blank">github.com/{{site.github}}</a></li>
+              {% endif %}
 
-                    {% if site.linkedin %}
-                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/{{site.linkedin}}" target="_blank">linkedin.com/in/{{site.linkedin}}</a></li>
-                    {% endif %}
+          </ul>
+      </div><!--//contact-container-->
 
-                    {% if site.github %}
-                    <li class="github"><i class="fa fa-github"></i><a href="http://github.com/{{site.github}}" target="_blank">github.com/{{site.github}}</a></li>
-                    {% endif %}
+     {% include language.html %}
+     {% include interests.html %}
 
-                </ul>
-            </div><!--//contact-container-->
-           {% include language.html %}
-           {% include interests.html %}
-
-
-        </div><!--//sidebar-wrapper-->
+</div><!--//sidebar-wrapper-->
