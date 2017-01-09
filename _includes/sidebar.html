@@ -11,7 +11,11 @@
             <div class="contact-container container-block">
                 <ul class="list-unstyled contact-list">
 
-                   {% if site.email %}
+                    {% if site.bday %}
+                    <li class="bday"><i class="fa fa-birthday-cake "></i>{{site.bday}}</li>
+                    {% endif %}
+
+                    {% if site.email %}
                     <li class="email"><i class="fa fa-envelope"></i><a href="mailto: {{site.email}}">{{site.email}}</a></li>
                     {% endif %}
 
