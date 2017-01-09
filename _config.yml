@@ -1,14 +1,14 @@
-title: Ant's place
+title: Ants CV
 
 style: styles-3
 
-name: Ant
-tagline: CS Student
-pic: profile.png
+name: Mrówka Rudnica
+tagline: Computer Science Student
+# pic: profile.png
 
 #sidebar links
-#email: hello@webjeda.com
-#phone: 012 345 6789
+email: ant@anthill.com
+phone: 012 345 678 910
 github: ant6
 #website: blog.webjeda.com #do not add http://
-#linkedin: alandoe
+linkedin: ant
