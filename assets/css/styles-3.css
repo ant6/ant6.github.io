@@ -188,7 +188,7 @@ p {
   top: -2px;
 }
 .main-wrapper .section {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 .main-wrapper .experiences-section .education-section .item {
   margin-bottom: 30px;
@@ -304,4 +304,8 @@ used for profile image
   border: 0px solid #fff;
   border-radius: 100%;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+#skills_info {
+  margin-bottom: 10px;
 }
