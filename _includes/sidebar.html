@@ -16,7 +16,7 @@
               <li class="email"><i class="fa fa-envelope"></i><a href="mailto: {{site.email}}">{{site.email}}</a></li>
               {% endif %}
 			  
-			  {% if site.phone %}
+			  {% if site.city %}
               <li class="city"><i class="fa fa-map-marker"></i><a href="https://www.google.pl/maps?q={{site.city}}">&nbsp;&nbsp;{{site.city}}</a></li>
               {% endif %}
 
@@ -29,7 +29,7 @@
               {% endif %}
 
               {% if site.linkedin %}
-              <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/{{site.linkedin}}" target="_blank">linkedin.com/in/{{site.linkedin}}</a></li>
+              <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/{{site.linkedin}}" target="_blank">{{site.linkedin}}</a></li>
               {% endif %}
 
               {% if site.github %}
